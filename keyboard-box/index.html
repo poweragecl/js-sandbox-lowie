@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <title>Document</title>
+    <style>
+
+        body{
+            background-color: #333;
+        }
+
+        .keyboard-box{
+            width:250px;
+            height:250px;
+            background-color: cornsilk;
+            position: relative;
+            margin: 30vh auto;
+        }
+
+        .character{
+            width:15px;
+            height:15px;
+            background-color: crimson;
+            border-radius:500px;
+            position: absolute;
+            /* outline: 5px solid rgba(255, 27, 95,.2); */
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            animation: pulseAura 1s infinite ease-in-out;
+        }
+
+        @keyframes pulseAura{
+            0%{
+                outline: 0 solid rgba(255, 27, 95,.2);
+            }
+
+            50%{
+                outline: 10px solid rgba(255, 27, 95,.2);
+            }
+
+            100%{
+                outline: 0 solid rgba(255, 27, 95,.2);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div class="keyboard-box">
+        <div class="character">
+        </div>
+    </div>
+
+</body>
+</html>
